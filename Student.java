@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Student extends Person {
     //attribute
@@ -45,7 +46,7 @@ public class Student extends Person {
     }
     //List all courses
     public void listCourses(){
-        System.out.println("Courses enrolled by" + getName() + ":");
+        System.out.println("Courses enrolled by " + getName() + ":");
         for (String course : courses){
             System.out.println("- " + course);
         }

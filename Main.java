@@ -23,6 +23,9 @@ public class Main {
         professor1.teachCourse("Calc 2");
         professor2.teachCourse("History 101");
 
+        //enroll classes
+        student1.enrollCourse("Calc 2, ");
+
         //create Researchers
         Researcher researcher = new Researcher("Bobby Davis", "R432", "Bobbydavisresearch@gmail.com", "Quantum Physics");
         researcher.addPublication("A Dive Into Quantum Physics");
@@ -36,6 +39,8 @@ public class Main {
         p.manageProfessor(professor2);
         p.manageResearcher(researcher);
         researcher.conductResearch(professor1);
+
+      
         
 
 
@@ -48,9 +53,11 @@ public class Main {
             timeOfDay = scanner.nextLine().toLowerCase();
 
             if (timeOfDay.equals("morning")) {
-                System.out.println(student1.getName() + " enrolled in Calc 2, Chemistry, Physics, History, English.");
+                student1.enrollCourse("Calc 2");
+                student1.listCourses();
             } else if (timeOfDay.equals("afternoon")) {
-                System.out.println(student1.getName() + " enrolled in History, Chemistry, Physics, English, Calc 2.");
+                student2.enrollCourse("History");
+                student2.listCourses();
             } else if (timeOfDay.equals("exit")) {
                 System.out.println("Exiting program. Goodbye!");
                 break;
