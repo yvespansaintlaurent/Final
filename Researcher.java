@@ -55,6 +55,10 @@ public class Researcher extends Person{
             }
         }
     }
+    //conduct research
+    public void conductResearch(Professor professor) {
+        System.out.println(getName() + " is conducting research in " + researchArea + " with " + professor.getName());
+    }
     //Override getDetails() from person
     public String getDetails(){
         return super.getDetails() + ", Research Area: " + researchArea;

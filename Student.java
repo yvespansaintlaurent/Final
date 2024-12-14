@@ -56,9 +56,9 @@ public class Student extends Person {
         return super.getDetails() + ", Major: " + major + ", GPA: " + GPA;
     }
 
-    public void AssignProfessor(Professor professor1){
+    public void AssignProfessor(Professor professor){
         //print what has happened
-        System.out.println(super.getName() + " has been assigned to " + professor1.getName());
+        System.out.println(super.getName() + " has been assigned to " + professor.getName());
     }
     
 }

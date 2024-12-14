@@ -34,6 +34,8 @@ public class Main {
         p.manageStudent(student2);
         p.manageProfessor(professor1);
         p.manageProfessor(professor2);
+        p.manageResearcher(researcher);
+        researcher.conductResearch(professor1);
         
 
 

@@ -22,6 +22,10 @@ public class Administrator extends Person {
     public void manageProfessor(Professor professor) {
         System.out.println(getName() + " is managing the professor: " + professor.getName());
     }
+    //Manage Researcher
+    public void manageResearcher(Researcher researcher){
+        System.out.println(getName() + " is managing the researcher: " + researcher.getName());
+    }
 
     @Override
     public String getDetails() {
