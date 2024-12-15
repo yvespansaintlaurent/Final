@@ -39,8 +39,8 @@ public class Professor extends Person {
         }
     }
     //simulates professor advising a student
-    public void adviseStudent(Student student){
-        System.out.println(getName() + " is advising student " + student.getName());
+    public void teachStudent(Student student){
+        System.out.println(getName() + " is teaching student " + student.getName());
     }
     
     public String getDetails(){

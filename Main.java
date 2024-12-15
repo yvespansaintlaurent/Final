@@ -38,6 +38,8 @@ public class Main {
         p.manageProfessor(professor1);
         p.manageProfessor(professor2);
         p.manageResearcher(researcher);
+        professor1.teachStudent(student1);
+        professor2.teachStudent(student2);
         researcher.conductResearch(professor1);
 
       
