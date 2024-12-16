@@ -24,7 +24,7 @@ public class Main {
         professor2.teachCourse("History 101");
 
         //enroll classes
-        student1.enrollCourse("Calc 2, ");
+        
 
         //create Researchers
         Researcher researcher = new Researcher("Bobby Davis", "R432", "Bobbydavisresearch@gmail.com", "Quantum Physics");
